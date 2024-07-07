@@ -1,5 +1,5 @@
 import { ReactNode } from 'react'
-import { cn } from '@/utils/css'
+import { cn } from '@/utils/css.ts'
 
 interface containerProps {
   className?: string

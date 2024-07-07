@@ -1,4 +1,5 @@
-import type { Metadata } from "next"
+import PopUp from '@/components/layout/popUp'
+import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Shop.co | Home page',
@@ -8,7 +9,9 @@ export const metadata: Metadata = {
 }
 
 export default function HomePage() {
-  return <div>
-    
-  </div>
+  return (
+    <>
+      <PopUp />
+    </>
+  )
 }
