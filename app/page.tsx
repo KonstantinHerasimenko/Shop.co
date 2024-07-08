@@ -1,3 +1,4 @@
+import Navigation from '@/components/layout/navigation'
 import PopUp from '@/components/layout/popUp'
 import type { Metadata } from 'next'
 
@@ -12,6 +13,7 @@ export default function HomePage() {
   return (
     <>
       <PopUp />
+      <Navigation/>
     </>
   )
 }

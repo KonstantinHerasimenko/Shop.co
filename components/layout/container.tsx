@@ -3,7 +3,7 @@ import { cn } from '@/utils/css.ts'
 
 interface containerProps {
   className?: string
-  children: ReactNode
+  children?: ReactNode
 }
 
 export default function Container({className,children}:containerProps) {

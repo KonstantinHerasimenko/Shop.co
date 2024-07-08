@@ -27,7 +27,7 @@ export default function PopUp() {
           </Link>
         </h6>
         <button onClick={() => setIsClosed(true)}>
-          <BaseIcon as={CloseIcon} className="w-4 aspect-square" />
+          <BaseIcon as={CloseIcon} className="w-5 aspect-square" />
         </button>
       </Container>
     </div>
