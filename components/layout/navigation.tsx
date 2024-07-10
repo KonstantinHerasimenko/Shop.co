@@ -4,11 +4,13 @@ import { ReactNode, useState } from 'react'
 import { Route } from 'next'
 import Link from 'next/link'
 import arrowDownIcon from '@/assets/icons/arrowDown.svg'
+import cartIcon from '@/assets/icons/cart.svg'
 import LogoFullICon from '@/assets/icons/logoFull.svg'
+import profileIcon from '@/assets/icons/profile.svg'
 import searchIcon from '@/assets/icons/search.svg'
 import Container from '@/components/layout/container'
+import BaseIcon from '@/components/ui/BaseIcon'
 import { cn } from '@/utils/css'
-import BaseIcon from '../ui/BaseIcon'
 
 const pagesList: Array<{ label: string; href: Route }> = [
   {
@@ -115,7 +117,10 @@ export default function Navigation() {
         */}
         <form className="bg-[#f0f0f0] pr-4.5 rounded-13xl grid grid-cols-[max-content_auto]">
           <button>
-            <BaseIcon as={searchIcon} className='h-12 text-[rgba(0,0,0,0.4)] px-4.5 py-3.5 hover:text-black duration-300'/>
+            <BaseIcon
+              as={searchIcon}
+              className="h-12 text-[rgba(0,0,0,0.4)] px-4.5 py-3.5 hover:text-black duration-300"
+            />
           </button>
           <input
             name="searchBar"
@@ -123,6 +128,15 @@ export default function Navigation() {
             placeholder="Search for products..."
           />
         </form>
+
+        <ul className='flex gap-4.5'>
+          <Link href="/">
+            <BaseIcon as={cartIcon} />
+          </Link>
+          <Link href="/">
+            <BaseIcon as={profileIcon}/>
+          </Link>
+        </ul>
       </Container>
     </nav>
   )
