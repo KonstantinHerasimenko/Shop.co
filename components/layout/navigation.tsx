@@ -3,8 +3,9 @@
 import { ReactNode, useState } from 'react'
 import { Route } from 'next'
 import Link from 'next/link'
-import arrowDown from '@/assets/icons/arrowDown.svg'
-import LogoFull from '@/assets/icons/logoFull.svg'
+import arrowDownIcon from '@/assets/icons/arrowDown.svg'
+import LogoFullICon from '@/assets/icons/logoFull.svg'
+import searchIcon from '@/assets/icons/search.svg'
 import Container from '@/components/layout/container'
 import { cn } from '@/utils/css'
 import BaseIcon from '../ui/BaseIcon'
@@ -56,12 +57,12 @@ export default function Navigation() {
 
   return (
     <nav className="fixed top-9 bg-white w-full">
-      <Container className="flex justify-between items-center h-18">
+      <Container className="grid grid-cols-[max-content_max-content_auto_max-content] gap-10 items-center py-6">
         <Link href="/">
-          <BaseIcon as={LogoFull} className="h-6" />
+          <BaseIcon as={LogoFullICon} className="h-6" />
         </Link>
 
-        <ul className="flex items-center gap-6 capitalize h-[100%]">
+        <ul className="flex items-center gap-6 capitalize h-[100%] w-max">
           <li className="h-full">
             <button
               className="capitalize h-full flex items-center"
@@ -70,7 +71,7 @@ export default function Navigation() {
               <span className="flex items-center gap-1">
                 <h3 className="underline-parent text-body-3">shop</h3>
                 <BaseIcon
-                  as={arrowDown}
+                  as={arrowDownIcon}
                   className={cn(
                     'h-5 -mb-1 duration-300 ease-in-out',
                     isDropDownActive && 'rotate-180'
@@ -109,6 +110,19 @@ export default function Navigation() {
             )
           })}
         </ul>
+        {/*
+        //todo #f0f0f0 and rgba(0,0,0,0.4) to tailwind config
+        */}
+        <form className="bg-[#f0f0f0] pr-4.5 rounded-13xl grid grid-cols-[max-content_auto]">
+          <button>
+            <BaseIcon as={searchIcon} className='h-12 text-[rgba(0,0,0,0.4)] px-4.5 py-3.5 hover:text-black duration-300'/>
+          </button>
+          <input
+            name="searchBar"
+            className="focus:outline-none bg-transparent placeholder:text-[rgba(0,0,0,0.4)]"
+            placeholder="Search for products..."
+          />
+        </form>
       </Container>
     </nav>
   )

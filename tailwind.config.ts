@@ -22,9 +22,9 @@ const config: Config = {
         'body-5': '0.75rem',
         'body-6': '0.625rem',
       },
-      height: {
-        '18': '4.5rem',
-      },
+      size: { '18': '4.5rem' },
+      spacing: { '3.5': '0.875rem', '4.5': '1.125rem' },
+      borderRadius: { '13xl': '3.75rem' },
     },
   },
   plugins: [],
