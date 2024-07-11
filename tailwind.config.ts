@@ -23,8 +23,17 @@ const config: Config = {
         'body-6': '0.625rem',
       },
       size: { '18': '4.5rem' },
-      spacing: { '3.5': '0.875rem', '4.5': '1.125rem' },
+      spacing: { '3.5': '0.875rem', '4.5': '1.125rem', '27': '6.75rem', '13.5': '3.375rem' },
       borderRadius: { '13xl': '3.75rem' },
+      colors: {
+        'black-01': 'rgba(0,0,0,0.1)',
+        'black-04': 'rgba(0,0,0,0.4)',
+        'black-06': 'rgba(0,0,0,0.6)',
+        snowflake: '#f0f0f0',
+      },
+      borderWidth: {
+        "1":"1px"
+      }
     },
   },
   plugins: [],

@@ -112,19 +112,17 @@ export default function Navigation() {
             )
           })}
         </ul>
-        {/*
-        //todo #f0f0f0 and rgba(0,0,0,0.4) to tailwind config
-        */}
-        <form className="bg-[#f0f0f0] pr-4.5 rounded-13xl grid grid-cols-[max-content_auto]">
+        
+        <form className="bg-snowflake pr-4.5 rounded-13xl grid grid-cols-[max-content_auto]">
           <button>
             <BaseIcon
               as={searchIcon}
-              className="h-12 text-[rgba(0,0,0,0.4)] px-4.5 py-3.5 hover:text-black duration-300"
+              className="h-12 text-black-04 px-4.5 py-3.5 hover:text-black duration-300"
             />
           </button>
           <input
             name="searchBar"
-            className="focus:outline-none bg-transparent placeholder:text-[rgba(0,0,0,0.4)]"
+            className="focus:outline-none bg-transparent placeholder:text-black-04"
             placeholder="Search for products..."
           />
         </form>
