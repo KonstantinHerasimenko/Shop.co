@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @layer components {
+  /*underline on hover animation*/
   .underline-parent{
     display: inline-block;
     position: relative;
