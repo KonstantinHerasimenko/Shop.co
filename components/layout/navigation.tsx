@@ -93,7 +93,7 @@ export default function Navigation() {
                       'relative px-8 w-52 right-8 bg-white text-body-3',
                       'py-2',
                       index === 0 && 'pt-6 pb-2',
-                      index === shopCategories.length - 1 && 'pb-6 pt-2'
+                      index === shopCategories.length - 1 && 'pb-6 pt-2 rounded-b-2.5xl'
                     )}
                   >
                     <Link href={href} className="underline-parent">

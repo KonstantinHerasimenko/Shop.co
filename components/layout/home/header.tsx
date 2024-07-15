@@ -11,6 +11,7 @@ import zaraLogo from '@/assets/logos/zara.svg'
 import headerBg from '@/assets/photos/headerBg.jpeg'
 import Container from '@/components/layout/container'
 import BaseIcon from '@/components/ui/BaseIcon'
+import { cn } from '@/utils/css'
 
 const brandImages: Array<{ name: string; src: FC<SVGProps<SVGElement>> }> = [
   {
@@ -49,7 +50,10 @@ export default function Header() {
           </p>
           <Link
             href="/"
-            className="text-white bg-black px-13.5 py-3.5 w-max rounded-13xl capitalize text-body-3 font-medium mb-12 hover:bg-white hover:text-black duration-500 ease-in-out"
+            className={cn(
+              'px-13.5 py-3.5 w-max rounded-13xl capitalize text-body-3 font-medium mb-12',
+              'hover:border-black-01 hover:bg-transparent hover:text-black bg-black text-white border-black border-1 duration-500 ease-in-out'
+            )}
           >
             shop now
           </Link>

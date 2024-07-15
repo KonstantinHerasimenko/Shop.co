@@ -15,6 +15,11 @@ const nextConfig = {
         hostname: 'placeimg.com',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'api.escuelajs.co',
+        pathname: '/**',
+      },
     ],
   },
   webpack(config) {
