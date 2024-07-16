@@ -38,7 +38,7 @@ const brandImages: Array<{ name: string; src: FC<SVGProps<SVGElement>> }> = [
 
 export default function Header() {
   return (
-    <header className="min-h-screen grid grid-rows-[auto_max-content] mb-18">
+    <header className="min-h-screen grid grid-rows-[auto_max-content] mb-18 bg-[#F2F0F1]">
       <Container className="grid grid-cols-2 h-full pt-32">
         <article className="flex flex-col self-center">
           <h1 className="text-heading-1 font-bold uppercase">

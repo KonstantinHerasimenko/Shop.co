@@ -1,5 +1,6 @@
 import Container from '@/components/layout/container'
 import Arrivals from '@/components/layout/home/arrivals'
+import CategoryBrowse from '@/components/layout/home/categories'
 import Header from '@/components/layout/home/header'
 import TopSelling from '@/components/layout/home/topSelling'
 import Navigation from '@/components/layout/navigation'
@@ -19,10 +20,11 @@ export default function HomePage() {
       <PopUp />
       <Navigation />
       <Header />
-      <main>
-        <Container className='min-h-screen'>
+      <main className='mb-20'>
+        <Container>
           <Arrivals />
           <TopSelling/>
+          <CategoryBrowse/>
         </Container>
       </main>
     </>
