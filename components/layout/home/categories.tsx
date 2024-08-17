@@ -1,8 +1,3 @@
-import { link } from 'fs';
-import casualBg from '@/assets/photos/casualCategory.jpeg';
-import formalBg from '@/assets/photos/formalCategory.jpeg';
-import gymBg from '@/assets/photos/gymCategory.jpeg';
-import partyBg from '@/assets/photos/partyCategory.jpeg';
 import { cn } from '@/utils/css';
 
 

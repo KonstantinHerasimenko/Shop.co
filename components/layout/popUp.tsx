@@ -11,7 +11,7 @@ export default function PopUp() {
   const [isClosed, setIsClosed] = useState(false)
 
   return (
-    <div className={cn(isClosed && 'hidden', 'fixed w-full h-fit bg-black py-2')}>
+    <div className={cn(isClosed && 'hidden', 'fixed z-50 w-full h-fit bg-black py-2')}>
       <Container
         className={cn(
           // color

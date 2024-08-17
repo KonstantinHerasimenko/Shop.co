@@ -1,12 +1,7 @@
-import { ReactNode } from 'react'
+import { ComponentPropsWithRef, ReactNode } from 'react'
 import { cn } from '@/utils/css.ts'
 
-interface containerProps {
-  className?: string
-  children?: ReactNode
-}
-
-export default function Container({className,children}:containerProps) {
+export default function Container({className,children,...props}:ComponentPropsWithRef<"div">) {
   return (
     <div
       className={cn(
@@ -16,6 +11,7 @@ export default function Container({className,children}:containerProps) {
         'mx-auto px-4',
         className
       )}
+      {...props}
     >
       {children}
     </div>

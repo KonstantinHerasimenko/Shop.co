@@ -1,5 +1,4 @@
-import type { Config } from 'tailwindcss';
-
+import type { Config } from 'tailwindcss'
 
 const config: Config = {
   content: [
@@ -46,9 +45,9 @@ const config: Config = {
         party: 'url(../assets/photos/partyCategory.jpeg)',
         gym: 'url(../assets/photos/gymCategory.jpeg)',
       },
-      backgroundPosition:{
-        "right-center":"right center"
-      }
+      backgroundPosition: {
+        'right-center': 'right center',
+      },
     },
   },
   plugins: [],

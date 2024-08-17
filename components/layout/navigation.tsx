@@ -58,7 +58,7 @@ export default function Navigation() {
   }
 
   return (
-    <nav className="fixed top-9 bg-white w-full">
+    <nav className="fixed z-50 top-9 bg-white w-full">
       <Container className="grid grid-cols-[max-content_max-content_auto_max-content] gap-10 items-center py-6">
         <Link href="/">
           <BaseIcon as={LogoFullICon} className="h-6" />

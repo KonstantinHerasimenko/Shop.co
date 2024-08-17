@@ -2,6 +2,7 @@ import Container from '@/components/layout/container'
 import Arrivals from '@/components/layout/home/arrivals'
 import CategoryBrowse from '@/components/layout/home/categories'
 import Header from '@/components/layout/home/header'
+import Reviews from '@/components/layout/home/reviews'
 import TopSelling from '@/components/layout/home/topSelling'
 import Navigation from '@/components/layout/navigation'
 import PopUp from '@/components/layout/popUp'
@@ -27,6 +28,7 @@ export default function HomePage() {
           <CategoryBrowse/>
         </Container>
       </main>
+      <Reviews/>
     </>
   )
 }

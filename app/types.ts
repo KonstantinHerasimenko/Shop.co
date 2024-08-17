@@ -15,3 +15,25 @@ export interface product {
     updatedAt: string
   }
 }
+
+export interface review {
+  id: number
+  body: string
+  rating: number
+  userId: number
+  cardId: number
+  posted: string
+}
+
+export interface user {
+  userId: number
+  name: { first: string; last: string }
+  email: string
+  login: { username: string; password: string }
+  picture: {
+    large: string
+    medium: string
+    thumbnail: string
+  }
+  cart: number[]
+}

@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1,
+    "body": "The plush material drapes like a midnight sky, its softness rivaling the touch of stardust. Whether it's a gown, a shirt, or a scarf, the way it envelops me feels like a whispered secret. When I wear these clothes, I become a constellation of grace, ready to light up any occasion.",
+    "rating": 3,
+    "userId": 16,
+    "cardId": 7,
+    "posted": "Wed, 19 Jan 2022 07:08:54"
+  },
+  {
+    "id": 2,
+    "body": "This faded blue cloth is more than fabric; it's a vessel of memories. The buttons evoke nostalgia, reminiscent of lazy Sunday mornings and sun-kissed adventures. Its laid-back coolness pairs effortlessly with denim or tucks neatly into a skirt. As I button it up, I feel like I'm embracing a piece of my own history—a cloth that whispers stories of comfort and authenticity.",
+    "rating": 3.5,
+    "userId": 21,
+    "cardId": 7,
+    "posted": "Tue, 10 Oct 2023 19:34:09"
+  },
+  {
+    "id": 3,
+    "body": "These textured shorts are summer's secret weapon against sweltering days. The pattern not only keeps me cool but also adds a touch of whimsy. They're adventure-ready—whether for beach picnics or impromptu hikes. The elastic waistband ensures comfort during carefree escapades. These shorts are a passport to sun-soaked memories.",
+    "rating": 3,
+    "userId": 18,
+    "cardId": 3,
+    "posted": "Tue, 10 Nov 2020 09:23:09"
+  },
+  {
+    "id": 4,
+    "body": "Slip into luxury with these silk pajamas. The smoothness against my skin rivals moonlight caresses. The delicate piping along the edges adds a refined touch, turning bedtime into a silk-wrapped dream. As I lounge in these pajamas, I imagine myself in a vintage Hollywood film, sipping champagne and contemplating life's mysteries. Comfort meets elegance—it's a ritual worth savoring.",
+    "rating": 4.5,
+    "userId": 22,
+    "cardId": 1,
+    "posted": "Sun, 16 Aug 2020 22:21:52"
+  },
+  {
+    "id": 5,
+    "body": "This flowing cloth invites twirls and sunlit adventures. Its silhouette flatters every figure, and the fabric feels like a gentle breeze against my skin. Pair it with sandals and a wide-brimmed hat, and suddenly I'm strolling through a Mediterranean village, the scent of lavender lingering in the air. This cloth isn't just clothing; it's an escape to sun-drenched shores.",
+    "rating": 3.5,
+    "userId": 29,
+    "cardId": 13,
+    "posted": "Tue, 16 Nov 2021 00:24:45"
+  },
+  {
+    "id": 6,
+    "body": "The denim jacket tells a story through its intricate embroidery. Flowers bloom along the collar, and tiny birds perch on the cuffs. It's like wearing a vintage tapestry—a piece of art that keeps me warm. Whether I'm at a music festival or sipping coffee at a sidewalk café, this jacket sparks conversations and nostalgia.",
+    "rating": 3,
+    "userId": 26,
+    "cardId": 2,
+    "posted": "Mon, 03 Jan 2022 21:17:02"
+  },
+  {
+    "id": 7,
+    "body": "The linen dress is a breath of fresh air. The button-down front allows for playful styling—wear it open over a swimsuit or cinch it with a woven belt. The fabric dances around my ankles, catching the breeze. As I walk barefoot on the beach, I feel like a bohemian wanderer, collecting seashells and sunsets.",
+    "rating": 3,
+    "userId": 30,
+    "cardId": 16,
+    "posted": "Sat, 07 Aug 2021 05:41:46"
+  },
+  {
+    "id": 8,
+    "body": "The cashmere scarf is my winter confidante. Its softness against my neck is a gentle reminder that warmth can be luxurious. The subtle herringbone pattern adds sophistication, and the fringed edges sway like whispers. Wrapped snugly, I brave snowflakes and city winds, cocooned in elegance.",
+    "rating": 4,
+    "userId": 10,
+    "cardId": 17,
+    "posted": "Sat, 12 Nov 2022 02:14:33"
+  },
+  {
+    "id": 9,
+    "body": "The organic cotton tunic is my ode to simplicity. Loose and airy, it's a canvas for creativity. I tie it at the waist, layer it over leggings, or wear it as a beach cover-up. The fabric feels like a hug from Mother Earth—pure, unadulterated comfort. It's not just clothing; it's a sustainable choice.",
+    "rating": 3.5,
+    "userId": 24,
+    "cardId": 1,
+    "posted": "Thu, 10 Feb 2022 02:03:18"
+  },
+  {
+    "id": 10,
+    "body": "The silk kimono robe transforms mundane moments into rituals. Its dragonfly print flutters across the fabric, and the wide sleeves make me feel like a geisha preparing for tea. Whether I'm sipping chamomile or reading poetry, this robe adds a touch of elegance. It's my secret to feeling regal at home.",
+    "rating": 4,
+    "userId": 15,
+    "cardId": 9,
+    "posted": "Sun, 19 Feb 2023 08:37:53"
+  },
+  {
+    "id": 11,
+    "body": "I had such a lovely experience shopping here. The staff made the whole process enjoyable, even in the current climate. They provided excellent advice and went above and beyond to help me find the perfect dress.",
+    "rating": 4.5,
+    "userId": 32,
+    "cardId": 5,
+    "posted": "Sun, 16 Jun 2024 04:34:07"
+  },
+  {
+    "id": 12,
+    "body": "This store is the best! The customer service was outstanding, and the products were of high quality. I appreciate that they carry both affordable and luxury brands.",
+    "rating": 3,
+    "userId": 1,
+    "cardId": 1,
+    "posted": "Sat, 07 Nov 2020 13:40:25"
+  },
+  {
+    "id": 13,
+    "body": "I can't say enough good things about this place. The personalized service was top-notch, and their website is user-friendly. The customer service team was incredibly helpful.",
+    "rating": 4,
+    "userId": 25,
+    "cardId": 5,
+    "posted": "Sat, 26 Aug 2023 16:42:50"
+  },
+  {
+    "id": 14,
+    "body": "I recently purchased a pair of stylish sneakers from this store. Not only are they fashionable, but they're also comfortable for all-day wear.",
+    "rating": 3,
+    "userId": 8,
+    "cardId": 3,
+    "posted": "Fri, 31 May 2024 22:10:39"
+  },
+  {
+    "id": 15,
+    "body": "The microfiber cleaning cloths I bought here are fantastic. They're soft, durable, and highly effective at cleaning various surfaces.",
+    "rating": 4,
+    "userId": 46,
+    "cardId": 15,
+    "posted": "Fri, 22 Oct 2021 14:42:52"
+  },
+  {
+    "id": 16,
+    "body": "Such a lovely experience. The girls made the experience really enjoyable even in the current climate. They were so helpful from start to finish, offering great advice and going above and beyond to help me find the perfect dress.",
+    "rating": 4.5,
+    "userId": 19,
+    "cardId": 15,
+    "posted": "Mon, 20 Jul 2020 07:02:05"
+  },
+  {
+    "id": 17,
+    "body": "Top Cloth! Great personal service, nice products (not too expensive, grand brands). Decent website. Customer service really good - nothing too much trouble.",
+    "rating": 3,
+    "userId": 40,
+    "cardId": 7,
+    "posted": "Mon, 11 Oct 2021 23:40:47"
+  },
+  {
+    "id": 18,
+    "body": "The keds are stylish and comfortable. Maybe original. However, the shoebox was in terrible condition, and the assembly inside was not great.",
+    "rating": 3.5,
+    "userId": 36,
+    "cardId": 14,
+    "posted": "Thu, 08 Oct 2020 09:58:01"
+  }
+]
