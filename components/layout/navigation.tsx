@@ -11,6 +11,7 @@ import searchIcon from '@/assets/icons/search.svg'
 import Container from '@/components/layout/container'
 import BaseIcon from '@/components/ui/BaseIcon'
 import { cn } from '@/utils/css'
+import { CircleUser, Search, ShoppingCart } from 'lucide-react'
 
 const pagesList: Array<{ label: string; href: Route }> = [
   {
@@ -114,11 +115,8 @@ export default function Navigation() {
         </ul>
         
         <form className="bg-snowflake pr-4.5 rounded-13xl grid grid-cols-[max-content_auto]">
-          <button>
-            <BaseIcon
-              as={searchIcon}
-              className="h-12 text-black-04 px-4.5 py-3.5 hover:text-black duration-300"
-            />
+          <button className='hover:text-black text-black-04 px-4.5 py-3.5  duration-300'>
+            <Search size={24} strokeWidth={1}/>
           </button>
           <input
             name="searchBar"
@@ -129,10 +127,10 @@ export default function Navigation() {
 
         <ul className='flex gap-4.5'>
           <Link href="/">
-            <BaseIcon as={cartIcon} />
+            <ShoppingCart strokeWidth={2}/>
           </Link>
           <Link href="/">
-            <BaseIcon as={profileIcon}/>
+            <CircleUser strokeWidth={2}/>
           </Link>
         </ul>
       </Container>

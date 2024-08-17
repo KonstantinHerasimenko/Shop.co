@@ -2,10 +2,9 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import CloseIcon from '@/assets/icons/close.svg'
 import Container from '@/components/layout/container'
-import BaseIcon from '@/components/ui/BaseIcon'
 import { cn } from '@/utils/css.ts'
+import { X } from 'lucide-react'
 
 export default function PopUp() {
   const [isClosed, setIsClosed] = useState(false)
@@ -27,7 +26,7 @@ export default function PopUp() {
           </Link>
         </h6>
         <button onClick={() => setIsClosed(true)}>
-          <BaseIcon as={CloseIcon} className="w-5 aspect-square" />
+          <X size={20}/>
         </button>
       </Container>
     </div>

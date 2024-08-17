@@ -6,6 +6,7 @@ import Container from '@/components/layout/container';
 import reviews from '@/data/reviews.json';
 import users from '@/data/users.json';
 import Rating from '../rating';
+import { ArrowLeft, ArrowRight } from 'lucide-react';
 
 
 export default function Reviews() {
@@ -90,8 +91,9 @@ export default function Reviews() {
         <div className="flex justify-between items-baseline mb-10">
           <h2 className="text-heading-2 uppercase font-bold">our happy customers</h2>
           <label className="flex gap-4.5">
-            <button onClick={() => changeSlideIndex(-1)}>{'<'}</button>
-            <button onClick={() => changeSlideIndex(1)}>{'>'}</button>
+            <button onClick={() => changeSlideIndex(-1)}>
+              <ArrowLeft strokeWidth={2}/></button>
+            <button onClick={() => changeSlideIndex(1)}><ArrowRight strokeWidth={2}/></button>
           </label>
         </div>
 
