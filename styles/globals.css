@@ -2,9 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
 @layer components {
   /*underline on hover animation*/
-  .underline-parent{
+  .underline-parent {
     display: inline-block;
     position: relative;
   }

@@ -68,7 +68,7 @@ export default function Reviews() {
   const reviewCards = reviews.concat(reviews).map((review: review,index) => {
     return (
       <li
-        key={`review${review.id}`}
+        key={`review${index}`}
         className="py-7 px-8 border-black-01 text-black border-1 rounded-2.5xl relative"
         style={{ width: `${(containerWidth - (slideNumber - 1) * 20) / slideNumber}px` }}
       >
@@ -86,7 +86,7 @@ export default function Reviews() {
   })
 
   return (
-    <section className="mb-20">
+    <section>
       <Container>
         <div className="flex justify-between items-baseline mb-10">
           <h2 className="text-heading-2 uppercase font-bold">our happy customers</h2>
