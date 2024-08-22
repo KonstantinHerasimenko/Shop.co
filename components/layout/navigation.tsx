@@ -1,17 +1,19 @@
-'use client'
+'use client';
 
-import { ReactNode, useState } from 'react'
-import { Route } from 'next'
-import Link from 'next/link'
-import arrowDownIcon from '@/assets/icons/arrowDown.svg'
-import cartIcon from '@/assets/icons/cart.svg'
-import LogoFullICon from '@/assets/icons/logoFull.svg'
-import profileIcon from '@/assets/icons/profile.svg'
-import searchIcon from '@/assets/icons/search.svg'
-import Container from '@/components/layout/container'
-import BaseIcon from '@/components/ui/BaseIcon'
-import { cn } from '@/utils/css'
-import { CircleUser, Search, ShoppingCart } from 'lucide-react'
+import { ReactNode, useState } from 'react';
+import { Route } from 'next';
+import Link from 'next/link';
+import { ChevronDown, CircleUser, Search, ShoppingCart } from 'lucide-react';
+import arrowDownIcon from '@/assets/icons/arrowDown.svg';
+import cartIcon from '@/assets/icons/cart.svg';
+import LogoFullICon from '@/assets/icons/logoFull.svg';
+import profileIcon from '@/assets/icons/profile.svg';
+import searchIcon from '@/assets/icons/search.svg';
+import Container from '@/components/layout/container';
+import BaseIcon from '@/components/ui/BaseIcon';
+import { cn } from '@/utils/css';
+import { useAppSelector } from '@/lib/redux/hooks';
+
 
 const pagesList: Array<{ label: string; href: Route }> = [
   {
@@ -53,13 +55,14 @@ const shopCategories: Array<{ label: string; href: Route }> = [
 
 export default function Navigation() {
   const [isDropDownActive, setIsDropDownActive] = useState(false)
+  const isPopUpHidden = useAppSelector((state) => state.menusSlice.popUp.isHidden)
 
   function toggleDropDown() {
     setIsDropDownActive((prev: boolean) => !prev)
   }
 
   return (
-    <nav className="fixed z-50 top-9 bg-white w-full">
+    <nav className={cn("fixed z-50 bg-white w-full",!isPopUpHidden && "top-9")}>
       <Container className="grid grid-cols-[max-content_max-content_auto_max-content] gap-10 items-center py-6">
         <Link href="/">
           <BaseIcon as={LogoFullICon} className="h-6" />
@@ -73,13 +76,7 @@ export default function Navigation() {
             >
               <span className="flex items-center gap-1">
                 <h3 className="underline-parent text-body-3">shop</h3>
-                <BaseIcon
-                  as={arrowDownIcon}
-                  className={cn(
-                    'h-5 -mb-1 duration-300 ease-in-out',
-                    isDropDownActive && 'rotate-180'
-                  )}
-                />
+                <ChevronDown className={cn('-mb-1 duration-300 ease-in-out', isDropDownActive && "rotate-180")} size={20}/>
               </span>
             </button>
             {/*

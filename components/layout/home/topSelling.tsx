@@ -11,7 +11,7 @@ export default function TopSelling(){
 
   return(
     <article className="flex flex-col items-center pt-16">
-      <h2 className="font-bold text-heading-2 mb-10">top selling</h2>
+      <h2 className="font-bold text-heading-2 mb-10 uppercase">top selling</h2>
       <ul className="grid grid-cols-4 gap-5 mb-9">
         {
           catalog.slice(0,cardNumber).map((product:product)=>{

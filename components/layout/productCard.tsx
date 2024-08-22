@@ -22,6 +22,7 @@ export default function ProductCard({product}:ProductCardProps) {
         width={256}
         height={256}
         className="mb-4 rounded-2.5xl aspect-square w-full"
+        draggable={false}
       />
       <h4 className="text-body-2 mb-2 pr-4">{product.title}</h4>
       <div className="flex gap-2 w-full mb-2">

@@ -1,16 +1,18 @@
 'use client'
 
-import { useState } from 'react'
 import Link from 'next/link'
 import Container from '@/components/layout/container'
 import { cn } from '@/utils/css.ts'
 import { X } from 'lucide-react'
+import { useAppDispatch, useAppSelector } from '@/lib/redux/hooks'
+import { toggleMenu } from '@/lib/redux/features/todos/menusSlice'
 
 export default function PopUp() {
-  const [isClosed, setIsClosed] = useState(false)
+  const isPopUpHidden = useAppSelector(state=>state.menusSlice.popUp.isHidden)
+  const dispatch = useAppDispatch()
 
   return (
-    <div className={cn(isClosed && 'hidden', 'fixed z-50 w-full h-fit bg-black py-2')}>
+    <div className={cn(isPopUpHidden && 'hidden', 'fixed z-50 w-full h-fit bg-black py-2')}>
       <Container
         className={cn(
           // color
@@ -25,7 +27,7 @@ export default function PopUp() {
             Sign Up Now
           </Link>
         </h6>
-        <button onClick={() => setIsClosed(true)}>
+        <button onClick={() => dispatch(toggleMenu("popUp"))}>
           <X size={20}/>
         </button>
       </Container>

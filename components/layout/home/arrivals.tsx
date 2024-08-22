@@ -23,7 +23,7 @@ export default function Arrivals() {
           `grid-rows-${productNumber % 4}`
         )}
       >
-        {catalog.slice(-productNumber, catalog.length).map((product: product) => {
+        {catalog.slice(-productNumber, catalog.length).reverse().map((product: product) => {
           return (
             <li key={product.title}>
               <ProductCard product={product} />

@@ -37,9 +37,10 @@ const brandImages: Array<{ name: string; src: FC<SVGProps<SVGElement>> }> = [
 ]
 
 export default function Header() {
+  
   return (
-    <header className="min-h-screen grid grid-rows-[auto_max-content] mb-18 bg-[#F2F0F1]">
-      <Container className="grid grid-cols-2 h-full pt-32">
+    <header className="grid grid-rows-[auto_max-content] mb-18 bg-[#F2F0F1]">
+      <Container className={cn("grid grid-cols-2 min-h-screen pt-32")}>
         <article className="flex flex-col self-center">
           <h1 className="text-heading-1 font-bold uppercase">
             FIND CLOTHES THAT MATCHES YOUR STYLE
@@ -72,7 +73,7 @@ export default function Header() {
             </li>
           </ul>
         </article>
-        <Image src={headerBg} alt="" className="self-end" />
+        <Image src={headerBg} alt="" className="self-end" draggable={false}/>
       </Container>
       <section className="bg-black">
         <Container className="flex justify-between py-11">

@@ -1,4 +1,5 @@
 import Container from '@/components/layout/container'
+import Footer from '@/components/layout/footer'
 import Arrivals from '@/components/layout/home/arrivals'
 import CategoryBrowse from '@/components/layout/home/categories'
 import Header from '@/components/layout/home/header'
@@ -31,6 +32,7 @@ export default function HomePage() {
       </main>
       <Reviews/>
       <Newsletter/>
+      <Footer/>
     </>
   )
 }
