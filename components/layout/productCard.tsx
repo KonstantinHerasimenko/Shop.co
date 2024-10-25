@@ -1,9 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import halfStar from '@/assets/icons/halfStar.svg'
-import star from '@/assets/icons/star.svg'
 import { product } from '@/app/types'
-import BaseIcon from "@/components/ui/BaseIcon"
 import Rating from './rating'
 
 interface ProductCardProps {
@@ -13,7 +10,7 @@ interface ProductCardProps {
 export default function ProductCard({product}:ProductCardProps) {
   return (
     <Link
-      href={'/'}
+      href={{pathname:"/product",query:{data:product.id}}}
       className="font-bold grid grid-rows-[max-content_auto_max-content_max-content] h-full"
     >
       <Image
